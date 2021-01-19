@@ -10,6 +10,7 @@ if (n % 2 == 0){
   let n = parseInt(prompt("inserisci un numero"));
   console.log(n);
 }
+// fdf
 
 
 
