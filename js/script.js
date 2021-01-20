@@ -62,27 +62,27 @@
 // Creare un array di oggetti: ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
 // Stampare a schermo la bici con peso minore utilizzando destructuring e template literal.
 
-// const bici = [
-//   {
-//     nome : "bianchi",
-//     peso : "2"
-//   },
-//   {
-//     nome : "cipollini",
-//     peso : "5"
-//   }
-// ];
-//
-// let pesoIniziale = 1000;
-//
-// for ( let i = 0; i < bici.length; i++){
-//   if (bici[i].peso < pesoIniziale){
-//     pesoIniziale = bici[i].peso;
-//   }
-//   // const {nome, peso} = bici[i];
-//   // console.log(peso);
-//   // console.log(bici[i].peso);
-// }
+const bici = [
+  {
+    nome : "bianchi",
+    peso : "2"
+  },
+  {
+    nome : "cipollini",
+    peso : "5"
+  }
+];
+
+let pesoIniziale = 1000;
+
+for ( let i = 0; i < bici.length; i++){
+  if (bici[i].peso < pesoIniziale){
+    pesoIniziale = bici[i].peso;
+  }
+  // const {nome, peso} = bici[i];
+  // console.log(peso);
+  // console.log(bici[i].peso);
+}
 
 
 
@@ -93,30 +93,30 @@
 // Partendo da un array creiamone uno nuovo con solo i valori che hanno la posizione compresa tra i due numeri inseriti dall'utente
 // Usiamo i nuovi metodi degli array foreach o filter
 
-const array = ['Pippo', 'Pluto', 'Paperino', 'Paperone', 'Paperina', 'Paperoga'];
-
-let primoNumero = parseInt(prompt("inserisci un numero"));
-let secondoNumero = parseInt(prompt("inserisci un numero"));
-
-let sentinella = secondoNumero;
-
-if (primoNumero > secondoNumero){
-  secondoNumero = primoNumero;
-  primoNumero = sentinella;
-}
-
-// const nomiFiltrati = [];
-// for (let i = 0; i < array.length; i++){
-//   if (i > primoNumero && i < secondoNumero){
-//     nomiFiltrati.push(array[i]);
-//   }
+// const array = ['Pippo', 'Pluto', 'Paperino', 'Paperone', 'Paperina', 'Paperoga'];
+//
+// let primoNumero = parseInt(prompt("inserisci un numero"));
+// let secondoNumero = parseInt(prompt("inserisci un numero"));
+//
+// let sentinella = secondoNumero;
+//
+// if (primoNumero > secondoNumero){
+//   secondoNumero = primoNumero;
+//   primoNumero = sentinella;
 // }
-
-const nomiFiltrati = array.filter((index) => {
-  return index > primoNumero && index < secondoNumero
-});
-
-console.log(nomiFiltrati);
+//
+// // const nomiFiltrati = [];
+// // for (let i = 0; i < array.length; i++){
+// //   if (i > primoNumero && i < secondoNumero){
+// //     nomiFiltrati.push(array[i]);
+// //   }
+// // }
+//
+// const nomiFiltrati = array.filter((element,index,array) => {
+//   return index > primoNumero && index < secondoNumero
+// });
+//
+// console.log(nomiFiltrati);
 
 
 
