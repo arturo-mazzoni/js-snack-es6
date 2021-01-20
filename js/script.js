@@ -76,9 +76,12 @@
 // let pesoIniziale = 1000;
 //
 // for ( let i = 0; i < bici.length; i++){
-//   const {nome, peso} = bici[i];
-//   console.log(peso);
-//   console.log(bici[i].peso);
+//   if (bici[i].peso < pesoIniziale){
+//     pesoIniziale = bici[i].peso;
+//   }
+//   // const {nome, peso} = bici[i];
+//   // console.log(peso);
+//   // console.log(bici[i].peso);
 // }
 
 
@@ -91,7 +94,6 @@
 // Usiamo i nuovi metodi degli array foreach o filter
 
 const array = ['Pippo', 'Pluto', 'Paperino', 'Paperone', 'Paperina', 'Paperoga'];
-const nomiFiltrati = [];
 
 let primoNumero = parseInt(prompt("inserisci un numero"));
 let secondoNumero = parseInt(prompt("inserisci un numero"));
@@ -103,15 +105,16 @@ if (primoNumero > secondoNumero){
   primoNumero = sentinella;
 }
 
-for (let i = 0; i < array.length; i++){
-  if (array[i] > primoNumero && array[i] < secondoNumero){
-    nomiFiltrati.push(arrai[i]);
-  }
-}
+// const nomiFiltrati = [];
+// for (let i = 0; i < array.length; i++){
+//   if (i > primoNumero && i < secondoNumero){
+//     nomiFiltrati.push(array[i]);
+//   }
+// }
 
-// const nomiFiltrati = array.filter((element) => {
-//   return element > primoNumero && element < secondoNumero
-// });
+const nomiFiltrati = array.filter((index) => {
+  return index > primoNumero && index < secondoNumero
+});
 
 console.log(nomiFiltrati);
 
