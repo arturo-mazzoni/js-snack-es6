@@ -73,8 +73,12 @@ const bici = [
   }
 ];
 
-const {peso} = bici;
-console.log(peso);
+const [biciUno, biciDue] = bici;
+
+for ( let i = 0; i < bici.length; i++){
+  if ()
+}
+
 
 
 
@@ -84,7 +88,20 @@ console.log(peso);
 // Partendo da un array creiamone uno nuovo con solo i valori che hanno la posizione compresa tra i due numeri inseriti dall'utente
 // Usiamo i nuovi metodi degli array foreach o filter
 
-// const array = ['Pippo', 'Pluto', 'Paperino', 'Paperone', 'Paperina', 'Paperoga'];
+const array = ['Pippo', 'Pluto', 'Paperino', 'Paperone', 'Paperina', 'Paperoga'];
+const nomiFiltrati = [];
+
+let primoNumero = parseInt(prompt("inserisci un numero"));
+let secondoNumero = parseInt(prompt("inserisci un numero"));
+
+if (primoNumero < secondoNumero){
+  secondoNumero = primoNumero;
+
+}
+
+for (let i = 0; i < array.length; i++){
+  if (arrai[i])
+}
 
 
 
