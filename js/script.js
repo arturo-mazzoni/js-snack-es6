@@ -62,22 +62,24 @@
 // Creare un array di oggetti: ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
 // Stampare a schermo la bici con peso minore utilizzando destructuring e template literal.
 
-const bici = [
-  {
-    nome : "bianchi",
-    peso : "2"
-  },
-  {
-    nome : "cipollini",
-    peso : "5"
-  }
-];
-
-const [biciUno, biciDue] = bici;
-
-for ( let i = 0; i < bici.length; i++){
-  if ()
-}
+// const bici = [
+//   {
+//     nome : "bianchi",
+//     peso : "2"
+//   },
+//   {
+//     nome : "cipollini",
+//     peso : "5"
+//   }
+// ];
+//
+// let pesoIniziale = 1000;
+//
+// for ( let i = 0; i < bici.length; i++){
+//   const {nome, peso} = bici[i];
+//   console.log(peso);
+//   console.log(bici[i].peso);
+// }
 
 
 
@@ -94,15 +96,24 @@ const nomiFiltrati = [];
 let primoNumero = parseInt(prompt("inserisci un numero"));
 let secondoNumero = parseInt(prompt("inserisci un numero"));
 
-if (primoNumero < secondoNumero){
-  secondoNumero = primoNumero;
+let sentinella = secondoNumero;
 
+if (primoNumero > secondoNumero){
+  secondoNumero = primoNumero;
+  primoNumero = sentinella;
 }
 
 for (let i = 0; i < array.length; i++){
-  if (arrai[i])
+  if (array[i] > primoNumero && array[i] < secondoNumero){
+    nomiFiltrati.push(arrai[i]);
+  }
 }
 
+// const nomiFiltrati = array.filter((element) => {
+//   return element > primoNumero && element < secondoNumero
+// });
+
+console.log(nomiFiltrati);
 
 
 
