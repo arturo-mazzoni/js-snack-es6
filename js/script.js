@@ -2,14 +2,14 @@
 
 // Utilizzando const e/o let inserire un numero, se è pari stampa il numero, se è dispari stampa il numero successivo.
 
-let n = parseInt(prompt("inserisci un numero"));
-
-if (n % 2 == 0){
-  console.log(n);
-} else {
-  n = parseInt(prompt("inserisci un numero"));
-  console.log(n);
-}
+// let n = parseInt(prompt("inserisci un numero"));
+//
+// if (n % 2 == 0){
+//   console.log(n);
+// } else {
+//   n = parseInt(prompt("inserisci un numero"));
+//   console.log(n);
+// }
 
 
 // ***********snack 2**********************************
@@ -21,7 +21,7 @@ if (n % 2 == 0){
 // const numeri = [11, 22, 33, 44, 55, 66, 77, 88, 99];
 // const pari = [];
 // const dispari = [];
-//
+
 // for (let i = 0; i < numeri.length; i++){
 //   if (numeri[i] % 2 == 0){
 //     pari.push(numeri[i]);
@@ -55,3 +55,58 @@ if (n % 2 == 0){
 // }else {
 //   console.log(word1);
 // }
+
+
+// ***********snack 4**********************************
+
+// Creare un array di oggetti: ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
+// Stampare a schermo la bici con peso minore utilizzando destructuring e template literal.
+
+const bici = [
+  {
+    nome : "bianchi",
+    peso : "2"
+  },
+  {
+    nome : "cipollini",
+    peso : "5"
+  }
+];
+
+const {peso} = bici;
+console.log(peso);
+
+
+
+// ***********snack 5**********************************
+
+
+// Partendo da un array creiamone uno nuovo con solo i valori che hanno la posizione compresa tra i due numeri inseriti dall'utente
+// Usiamo i nuovi metodi degli array foreach o filter
+
+// const array = ['Pippo', 'Pluto', 'Paperino', 'Paperone', 'Paperina', 'Paperoga'];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// zxcvasdgvsafd
